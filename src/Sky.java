@@ -15,9 +15,9 @@ public class Sky implements Drawable {
 
     @Override
     public void draw(Graphics2D gr) {
-        int r = 157;
-        int g = 63;
-        int b = 213;
+        int r = 0;
+        int g = 0;
+        int b = 100;
 
         float[] hsbvals = new float[0];
 
@@ -37,8 +37,8 @@ public class Sky implements Drawable {
             gr.setColor(currentColor);
 
             //здесь происходит изменение градиента. Фактически, может быть кастомизировано
-            if (i % 2 == 0) r -= 255/fadeCounts;
-            if (i % 2 == 1) b -= 255/fadeCounts;
+
+            b+= 100 / fadeCounts;
 
             //происходит расчёт размера градиентных кругов, и, соответственно, их отрисовка
             currentSize = (int) (Math.sqrt(width*width + height*height) / (i * 1.25));

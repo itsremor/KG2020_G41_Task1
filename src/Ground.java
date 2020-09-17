@@ -18,7 +18,7 @@ public class Ground implements Drawable{
     public void draw(Graphics2D gr) {
         float[] hsbvals = new float[0];
         int r = 0;
-        int g = 72;
+        int g = 50;
         int b = 0;
 
 
@@ -37,7 +37,7 @@ public class Ground implements Drawable{
             gr.fillRect(currentX, currentY, width, pixelCount);
             currentY += pixelCount;
 
-            g+= (255-72)/fadeCounts;
+            g+= 100/fadeCounts;
         }
     }
 }
