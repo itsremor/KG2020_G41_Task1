@@ -14,6 +14,9 @@ public class DrawPanel extends JPanel {
 
         Sky sky = new Sky(800, 600, 16);
         sky.draw(gr);
+
+        Ground ground = new Ground(800, 600, 35);
+        ground.draw(gr);
     }
 
     //запускается в методе paint, чтобы работало

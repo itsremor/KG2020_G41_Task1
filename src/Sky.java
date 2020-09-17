@@ -37,8 +37,8 @@ public class Sky implements Drawable {
             gr.setColor(currentColor);
 
             //здесь происходит изменение градиента. Фактически, может быть кастомизировано
-            if (i % 2 != 0) r -= 255/fadeCounts;
-            if (i % 3 == 0) b -= 255/fadeCounts;
+            if (i % 2 == 0) r -= 255/fadeCounts;
+            if (i % 2 == 1) b -= 255/fadeCounts;
 
             //происходит расчёт размера градиентных кругов, и, соответственно, их отрисовка
             currentSize = (int) (Math.sqrt(width*width + height*height) / (i * 1.25));

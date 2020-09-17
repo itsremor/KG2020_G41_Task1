@@ -5,6 +5,7 @@ import java.util.Scanner;
 //Ctrl + o = переопределить метод
 //Ctrl + q = документация
 //alt + ins = ???
+
 public class MainWindow extends JFrame {
 
     public MainWindow() throws HeadlessException {
