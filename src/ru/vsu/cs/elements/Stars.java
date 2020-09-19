@@ -1,7 +1,11 @@
+package ru.vsu.cs.elements;
+
+import ru.vsu.cs.Drawable;
+
 import java.awt.*;
 import java.util.Random;
 
-public class Stars implements Drawable{
+public class Stars implements Drawable {
     private int countOfStars;
     private int width;
     private int height;
@@ -31,7 +35,7 @@ public class Stars implements Drawable{
 
             size = 7;
             centerX = rnd.nextInt(width);
-            centerY = rnd.nextInt(width * 9 / 15);
+            centerY = rnd.nextInt(height * 9 / 15);
 
             for (int j = 0; j < 2; j++) {
                 currentColor = new Color(r,g,b);

@@ -1,3 +1,7 @@
+package ru.vsu.cs;
+
+import ru.vsu.cs.elements.*;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -10,8 +14,10 @@ public class DrawPanel extends JPanel {
 
         Sky sky = new Sky(getWidth(),getHeight(), 16);
         sky.draw(gr);
-        Stars stars = new Stars(20, getWidth(), getHeight());
+        Stars stars = new Stars(17, getWidth(), getHeight());
         stars.draw(gr);
+        Moon moon = new Moon(getWidth(), getHeight(), 100);
+        moon.draw(gr);
         Ground ground = new Ground(getWidth(), getHeight(), 25);
         ground.draw(gr);
 

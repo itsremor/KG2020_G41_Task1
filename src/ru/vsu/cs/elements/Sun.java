@@ -1,6 +1,10 @@
+package ru.vsu.cs.elements;
+
+import ru.vsu.cs.Drawable;
+
 import java.awt.*;
 
-public class Sun implements Drawable{
+public class Sun implements Drawable {
 
     private int x;
     private int y;

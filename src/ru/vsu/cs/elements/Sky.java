@@ -1,3 +1,7 @@
+package ru.vsu.cs.elements;
+
+import ru.vsu.cs.Drawable;
+
 import java.awt.*;
 
 public class Sky implements Drawable {

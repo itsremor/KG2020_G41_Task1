@@ -1,6 +1,7 @@
+package ru.vsu.cs;
+
 import javax.swing.*;
 import java.awt.*;
-import java.util.Scanner;
 
 //Ctrl + o = переопределить метод
 //Ctrl + q = документация

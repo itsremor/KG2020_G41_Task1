@@ -1,6 +1,10 @@
+package ru.vsu.cs.elements;
+
+import ru.vsu.cs.Drawable;
+
 import java.awt.*;
 
-public class Ground implements Drawable{
+public class Ground implements Drawable {
 
     private int width;
     private int height;
