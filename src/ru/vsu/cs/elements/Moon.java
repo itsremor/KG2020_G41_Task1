@@ -36,10 +36,18 @@ public class Moon implements Drawable {
         g -= 60;
 
         gr.setColor(new Color(r,g,b));
+        int tmpSize = size / 4;
+        int tmpX;
+        int tmpY;
+        int tmp;
 
-        //в цикле for сделать кратеры
-        for (int i = 0; i < 4; i++) {
-
+        //toDO Сделать так, чтобы кратеры не вылазили за границы
+        for (int i = 0; i < 6; i++) {
+            tmp = size - tmpSize;
+            tmpX = x + rnd.nextInt(tmp);
+            tmpY = y + rnd.nextInt(tmp) ;
+            gr.fillOval(tmpX, tmpY, tmpSize, tmpSize);
+            tmpSize /= 1.15;
         }
     }
 }

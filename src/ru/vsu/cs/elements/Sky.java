@@ -43,7 +43,7 @@ public class Sky implements Drawable {
             //происходит расчёт размера градиентных кругов, и, соответственно, их отрисовка
 
             gr.fillOval(centerX - (int)currentSize/2,centerY - (int)currentSize/2,(int)currentSize,(int)currentSize);
-            currentSize /= 1 + (1 / (double)fadeCounts);
+            currentSize /= 1 + (1 / (double)+fadeCounts);
         }
     }
 }
