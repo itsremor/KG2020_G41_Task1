@@ -19,21 +19,16 @@ public class Sky implements Drawable {
         int g = 0;
         int b = 100;
 
-        float[] hsbvals = new float[0];
-
-
         int currentSize;
 
         int centerX = width / 2;
         int centerY = height / 2;
 
-
+        Color currentColor;
 
 
         for (double i = 0; i < fadeCounts; i++){
-
-            hsbvals = Color.RGBtoHSB(r,g,b,null);
-            Color currentColor = Color.getHSBColor(hsbvals[0], hsbvals[1], hsbvals[2]);
+            currentColor = new Color(r,g,b);
             gr.setColor(currentColor);
 
             //здесь происходит изменение градиента. Фактически, может быть кастомизировано

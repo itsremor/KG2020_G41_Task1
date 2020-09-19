@@ -15,7 +15,6 @@ public class MainWindow extends JFrame {
     }
 
     public static void main(String[] args) {
-
         MainWindow mw = new MainWindow();
 
         int width = 800;
@@ -24,7 +23,5 @@ public class MainWindow extends JFrame {
         mw.setDefaultCloseOperation(EXIT_ON_CLOSE);
         mw.setSize(width, height);
         mw.setVisible(true);
-
     }
-
 }

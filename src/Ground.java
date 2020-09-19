@@ -16,7 +16,7 @@ public class Ground implements Drawable{
 
     @Override
     public void draw(Graphics2D gr) {
-        float[] hsbvals = new float[0];
+
         int r = 0;
         int g = 50;
         int b = 0;
@@ -25,13 +25,11 @@ public class Ground implements Drawable{
 
         int currentX = 0;
         int currentY = height * 9 / 15;
-        //int pixelCount = (int)(height*(float)(6/15)/fadeCounts);
-        int pixelCount = height * 6 / 15 / fadeCounts;
+        int pixelCount = height * 7 / 15 / fadeCounts;
+        Color currentColor;
 
         for (int i = 0; i < fadeCounts; i++) {
-            hsbvals = Color.RGBtoHSB(r,g,b,null);
-            Color currentColor = Color.getHSBColor(hsbvals[0], hsbvals[1], hsbvals[2]);
-
+            currentColor = new Color(r,g,b);
             gr.setColor(currentColor);
 
             gr.fillRect(currentX, currentY, width, pixelCount);
