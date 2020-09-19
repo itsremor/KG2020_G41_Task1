@@ -21,10 +21,11 @@ public class Sky implements Drawable {
     public void draw(Graphics2D gr) {
         int r = 0;
         int g = 0;
-        int b = 100;
+        int b = 50;
 
-        int currentSize;
 
+        double size = Math.sqrt(width*width + height*height);
+        double currentSize = size;
         int centerX = width / 2;
         int centerY = height / 2;
 
@@ -37,11 +38,12 @@ public class Sky implements Drawable {
 
             //здесь происходит изменение градиента. Фактически, может быть кастомизировано
 
-            b+= 100 / fadeCounts;
+            b += 100 / fadeCounts;
 
             //происходит расчёт размера градиентных кругов, и, соответственно, их отрисовка
-            currentSize = (int) (Math.sqrt(width*width + height*height) / (i * 1.25));
-            gr.fillOval(centerX - currentSize/2,centerY - currentSize/2,currentSize,currentSize);
+
+            gr.fillOval(centerX - (int)currentSize/2,centerY - (int)currentSize/2,(int)currentSize,(int)currentSize);
+            currentSize /= 1 + (1 / (double)fadeCounts);
         }
     }
 }
