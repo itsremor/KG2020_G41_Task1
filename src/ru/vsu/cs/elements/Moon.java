@@ -29,7 +29,7 @@ public class Moon implements Drawable {
         gr.setColor(currentColor);
 
         int x = rnd.nextInt(width - size);
-        int y = rnd.nextInt(height * 9 / 15 - size);
+        int y = rnd.nextInt(height * 4 / 15 - size);
 
         gr.fillOval(x,y,size,size);
         r -= 60;

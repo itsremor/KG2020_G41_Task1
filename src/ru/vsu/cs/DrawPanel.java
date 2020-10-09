@@ -7,7 +7,6 @@ width height передаётся в метод paint, а не в констру
 */
 
 import ru.vsu.cs.elements.*;
-import ru.vsu.cs.utils.HouseDrawUtil;
 
 import javax.swing.*;
 import java.awt.*;
@@ -29,9 +28,7 @@ public class DrawPanel extends JPanel {
         Ground ground = new Ground(getWidth(), getHeight(), 30);
         ground.draw(gr);
 
-//        Houses house = new Houses(getHeight(), getWidth(), 190, 5, 9,20);
-//        house.draw(gr);
-        HouseDrawUtil.drawHouse(gr,getHeight(), getWidth(), 190, 5, 9,20);
-        HouseDrawUtil.drawHouse(gr,getHeight(), getWidth(), 590, 5, 18,200);
+        Skyline skyline = new Skyline(getHeight(), getWidth());
+        skyline.draw(gr);
     }
 }
