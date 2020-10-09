@@ -1,5 +1,7 @@
 package ru.vsu.cs.elements;
 
+// добавить летающую тарелку
+
 import ru.vsu.cs.Drawable;
 
 import java.awt.*;
@@ -22,7 +24,7 @@ public class Sky implements Drawable {
         int r = 0;
         int g = 0;
         int b = 50;
-
+        //gr.setPaint(new GradientPaint());
 
         double size = Math.sqrt(width*width + height*height);
         double currentSize = size;
