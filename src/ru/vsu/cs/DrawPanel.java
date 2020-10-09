@@ -16,7 +16,7 @@ public class DrawPanel extends JPanel {
     public void paint(Graphics g) {
         Graphics2D gr = (Graphics2D) g;
 
-        Sky sky = new Sky(getWidth(),getHeight(), 100);
+        Sky sky = new Sky(getWidth(), getHeight(), 100);
         sky.draw(gr);
 
         Stars stars = new Stars(40, getWidth(), getHeight());
@@ -30,5 +30,12 @@ public class DrawPanel extends JPanel {
 
         Skyline skyline = new Skyline(getHeight(), getWidth());
         skyline.draw(gr);
+
+        Road road = new Road(getHeight(), getWidth());
+        road.draw(gr);
+
+        Table table = new Table(getHeight(), getWidth());
+        table.draw(gr);
     }
+
 }

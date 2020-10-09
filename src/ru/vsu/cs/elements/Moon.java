@@ -45,7 +45,8 @@ public class Moon implements Drawable {
         for (int i = 0; i < 6; i++) {
             tmp = size - tmpSize;
             tmpX = x + rnd.nextInt(tmp);
-            tmpY = y + rnd.nextInt(tmp) ;
+            tmpY = y + rnd.nextInt(tmp);
+
             gr.fillOval(tmpX, tmpY, tmpSize, tmpSize);
             tmpSize /= 1.15;
         }
